@@ -1,0 +1,23 @@
+nav a{
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
+    height: 40px;
+}
+.btn-start{
+    size: 3px;
+    padding: 0%;
+}
+nav a :hover{
+    
+    color: blue;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
