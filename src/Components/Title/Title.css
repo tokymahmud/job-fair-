@@ -2,6 +2,7 @@
     display: flex;
     max-width:max-content;
     gap: 5px;
+    justify-content: space-around;
     
 }
 .span-title{
@@ -9,6 +10,7 @@
 }
 .title-img{
     
-    width: 266px;
-    height: 144px;;
+    width: 666px;
+    height: 344px;
+    /* border: 2px solid red; */
 }

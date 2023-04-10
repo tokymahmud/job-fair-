@@ -1,0 +1,11 @@
+.jcard img {
+    height: 45px;
+
+}
+.jcard{
+    width: 90px;
+}
+.jcardContainer{
+    display:flex;
+    
+}

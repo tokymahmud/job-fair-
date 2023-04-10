@@ -1,4 +1,10 @@
 .jobCtg{
     text-align: center;
     width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 190px;
+    margin-top: 350px;
 }
+
+
