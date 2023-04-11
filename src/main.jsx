@@ -13,6 +13,7 @@ import Ajobs from './Components/Applied-Jobs/ajobs';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
 
+
 const router = createBrowserRouter([
 {
   path: '/',
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       path:'/',
       element:<Home></Home>,
       loader:()=> fetch('jobCatagory.json')
+      
     },
    {
     path:'statistics',

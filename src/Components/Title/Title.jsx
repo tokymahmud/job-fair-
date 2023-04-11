@@ -11,7 +11,7 @@ const Title = () => {
                     <button>Get Started</button>
                 </div>
                 <div className='title-img'>
-                    <img src="https://img.freepik.com/free-photo/businessman-black-suit-promoting-something_114579-15897.jpg?w=996&t=st=1681068924~exp=1681069524~hmac=39305af8077625d290135b51778790ec142f69e9d17b4dd0c106c96da76fa00a" alt="" />
+                    <img src="https://img.freepik.com/free-photo/home-network_1098-13328.jpg?w=996&t=st=1681119774~exp=1681120374~hmac=924ff475f1ce0c8250304ad5036b395be9f4c378d3af1bb1b553beff63495192" />
                 </div>
             </div>
         </div>

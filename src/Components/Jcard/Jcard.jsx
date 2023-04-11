@@ -4,7 +4,7 @@ import "./Jcard.css"
 const Jcard = ({jc}) => {
     const {image_url,title,number}=jc;
     return (
-        <div className='jcardContainer'>  
+        <div className='jcardContainer d-flex'>  
             
              <div className='jcard'>
                 <img src={image_url} alt="" />
