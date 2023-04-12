@@ -13,7 +13,11 @@ const ViewDetail = () => {
     },[])
     useEffect(()=>{
         const storedid=getShoppingCart();
-        console.log(storedid)
+        for(const id in storedid){
+            const savedid = details.find(details=>details.id==id);
+            const quantity =storedid[id];
+            savedid.quantity =quantity;
+        }
     },[])
     
     return (
@@ -35,7 +39,7 @@ const ViewDetail = () => {
                 <h4 className='fw-bold'>Job Details</h4>
                 <hr></hr>
                 <p><span className='fw-bold'>Salary:</span>{job.expected_salary}per month</p>
-                <p><span className='fw-bold'>Job Title :</span>{job.job_title}per month</p>
+                <p><span className='fw-bold'>Job Title :</span>{job.job_title}</p>
                 <h4 className='fw-bold'>Contact Information</h4>
                 <hr></hr>
                 <p><span className='fw-bold'>Phone : </span>{job.phone}</p>
