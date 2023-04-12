@@ -13,7 +13,9 @@ const ViewDetail = () => {
     
     
     return (
-        <div className='d-flex justify-content-evenly'>
+        <div>
+            <h2 className='text-decoration-underline text-center p-5'>Job Details</h2>
+             <div className='d-flex justify-content-evenly'>
             <div>
                 <p><span className='fw-bold'>Job Description:</span>{job.job_description} </p>
                 <p><span className='fw-bold'>Job Responsibility:</span>{job.responsibility} </p>
@@ -42,6 +44,9 @@ const ViewDetail = () => {
             <button type="button" className="btn btn-primary btn-sm align-item-center">Apply Now</button>
             </div>
         </div>
+
+        </div>
+       
     );
 };
 
