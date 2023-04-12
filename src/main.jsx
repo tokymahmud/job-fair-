@@ -12,6 +12,7 @@ import Main from './Components/Layout/Main';
 import Ajobs from './Components/Applied-Jobs/ajobs';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
+import ViewDetail from './Components/View Detail/ViewDetail';
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
    {
     path:'statistics',
     element: <Statistics></Statistics>
+   },
+   {
+    path:'job/:id',
+    element: <ViewDetail></ViewDetail>,
+    loader: ()=> fetch(`/job.json`)
    },
    {
     path:'ajobs',

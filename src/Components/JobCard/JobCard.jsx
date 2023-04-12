@@ -1,8 +1,9 @@
 import React from 'react';
 import "./JobCard.css"
+import { Link } from 'react-router-dom';
 
 const JobCard = ({jcard}) => {
-    const {company_logo_url,job_title,company_name,job_area,working_category,location,expected_salary}=jcard;
+    const {company_logo_url,job_title,company_name,job_area,working_category,location,expected_salary,id}=jcard;
 
     return (
         <div className='jobcard-container'>
@@ -20,7 +21,7 @@ const JobCard = ({jcard}) => {
             <h2>{location}</h2>
             <h2>{expected_salary}</h2>
             </div>
-            <button type="button" class="btn btn-info">View Details</button>
+            <button type="button" class="btn btn-info"> <Link to={`/job/${id}`}>View Details</Link></button>
             </div>
   
 
