@@ -13,12 +13,15 @@ import Ajobs from './Components/Applied-Jobs/ajobs';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
 import ViewDetail from './Components/View Detail/ViewDetail';
+import ErrorPage from "./Components/Error Page/error-page";
 
 
 const router = createBrowserRouter([
 {
   path: '/',
   element: <Main></Main>,
+  errorElement: <ErrorPage />,
+
   children: [
     {
       path:'/',

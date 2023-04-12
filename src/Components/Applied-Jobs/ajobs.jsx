@@ -15,7 +15,7 @@ const ajobs = () => {
               <td>{job.job_title}</td>
               <td>{job.working_category}</td>
             </tr> */}
-          ))}
+          
             </div>
         </div>
     );
