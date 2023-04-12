@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import "./ViewDetail.css"
+import { addToDb, getShoppingCart } from '../../utilities/fakedb';
 
 const ViewDetail = () => {
     const details = useLoaderData();
@@ -10,7 +11,10 @@ const ViewDetail = () => {
         const jobData =details.find(details=>details.id==id);
         setJob(jobData);
     },[])
-    
+    useEffect(()=>{
+        const storedid=getShoppingCart();
+        console.log(storedid)
+    },[])
     
     return (
         <div>
@@ -41,7 +45,7 @@ const ViewDetail = () => {
 
 
             </div>
-            <button type="button" className="btn btn-primary btn-sm align-item-center">Apply Now</button>
+            <button type="button" className="btn btn-primary btn-sm align-item-center" onClick={()=>addToDb(job.id)}>Apply Now</button>
             </div>
         </div>
 
